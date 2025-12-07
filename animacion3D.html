@@ -169,7 +169,7 @@
                     <p> </p>
 
                     <header class="major">
-                        <h3 style="font-size: 1.1em;">ANIMACIÓN CON ARMA</h3>
+                        <h4>ANIMACIÓN CON ARMA</h4>
                     </header>
                     <p>Primero, se importó el martillo al escenario. Se colocó el martillo en la mano izquierda. En el
                         hueso de la palma, se creó un IK Target, se hicieron las modificaciones correspondientes en los
@@ -187,7 +187,7 @@
                     <p> </p>
 
                     <header class="major">
-                        <h3 style="font-size: 1.1em;">ANIMACIÓN FACIAL</h3>
+                        <h4>ANIMACIÓN FACIAL</h4>
                     </header>
 
                     <p>
@@ -307,6 +307,95 @@
 
                     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
                         <img src="images/Mariposas3Ds.JPG" style="width:400px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <header class="major">
+                        <h3>INCLUSIÓN EN MOTOR DE JUEGO</h3>
+                    </header>
+
+                    <p>Una vez terminadas todas las animaciones, se exportaron las capas como archivos fbx para poder
+                        ser importadas en Unity.
+                    </p>
+
+                    <p>El movimiento del escenario se ejecuta constantemente. Por cada animación del payaso se creó un
+                        “Animation Controller”. Después se añadieron los scripts correspondientes para pausar la
+                        animación del payaso, y elegir qué animación ver utilizando los números del teclado.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/AnimacionUnity.JPG" style="width:400px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <header class="major">
+                        <h3>ANIMACIONES CON FÍSICAS</h3>
+                    </header>
+
+                    <p>Además de estas animaciones, dentro de Unity se implementaron algunas más complejas con físicas.
+                    </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">MESH CON MALLADO COMPLEJO</h3>
+                    </header>
+
+                    <h4>BANDERAS</h4>
+                    <p>Se modeló un mesh con forma triangular en 3Ds Max. Una vez importado en Unity, se implementaron
+                        las físicas de nodos y muelles a sus componentes para simular su movimiento.
+                    </p>
+
+                    <h4>HOJAS</h4>
+                    <p>Por otro lado, se modelaron dos meshes más complejos siguiendo la silueta de unas hojas. De la
+                        misma manera se importaron al proyecto, y se asignaron los scripts correspondientes a sus
+                        elementos.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Hojas.JPG" style="width:400px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">IMPLEMENTACIÓN DEL VIENTO</h3>
+                    </header>
+                    <p>Para simular un viento que oscila en sus valores y calcular la fuerza total a la que estarán
+                        sometidos los nodos, se sumará la fuerza del viento a la de la gravedad.
+                    </p>
+                    <p>Se crearon dos vectores, uno que contiene la fuerza base del viento, y otro en el que se almacena
+                        la del viento actual. La idea es utilizar una función trigonométrica para generar una fuerza
+                        cambiante. Se suma el valor calculado al viento base y se actualiza la fuerza total.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/BanderasUnity.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">COLISIÓN CON EL SUELO</h3>
+                    </header>
+
+                    <p>Se simuló la caída de las hojas desde un árbol. Para ello se utilizó un cubo colocado a la altura
+                        del suelo. Cuando un nodo de las hojas colisiona con este, se vuelve fijo, lo que detiene la la
+                        animación de caída.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/HojasUnity.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">MUELLE UNIDIMENSIONAL</h3>
+                    </header>
+
+                    <p>Finalmente, se implementó un muelle unidimensional en forma de cuerda con banderines. Con un
+                        nuevo script, se logra simular que los banderines están pegados a la cuerda. Este transforma la
+                        posición del Game Object que lo contiene a la del muelle que le corresponde.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/BanderinesUnity.JPG" style="width:600px; max-width:100%; height:auto;" />
                     </div>
                     <p> </p>
 
