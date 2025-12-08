@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Portfolio Marta Raboso</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <!-- Note: The "styleN" class below should match that of the banner element. -->
+        <header id="header" class="alt style2">
+            <a href="index.html" class="logo"><strong>Portfolio</strong> <span>Marta Raboso</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landing.html">Landing</a></li>
+                <li><a href="generic.html">Generic</a></li>
+                <li><a href="elements.html">Elements</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Get Started</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <!-- Note: The "styleN" class below should match that of the header element. -->
+        <section id="banner" class="style2">
+            <div class="inner">
+                <span class="image">
+                    <img src="images/pic07.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h1>Zombfection</h1>
+                </header>
+                <div class="content">
+                    <p>Implementación multijugador<br />
+                        a un juego existente mediante Netcode</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h2>INTRODUCCIÓN</h2>
+                    </header>
+                    <p>Dado un proyecto de Unity casi funcional, se implementaron los cambios necesarios para conseguir
+                        un juego completo al que se pueden conectar varios jugadores. El juego base está inspirado en el
+                        mod de Half-Life/Source Engine, uno de los primeros en combinar supervivencia cooperativa
+                        asimétrica.
+                    </p>
+                    <span class="image" style="display: block;">
+                        <img src="images/ZombieHumano.JPG" alt=""
+                            style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+                    </span>
+                </div>
+            </section>
+
+            <!-- One -->
+            <section id="one" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="inner">
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">JUEGO BASE</h3>
+                    </header>
+                    <p>El proyecto inicial presentaba una versión incompleta del juego “Zombfection”. La mecánica
+                        principal consiste en dividir a los jugadores en dos equipos (zombies y humanos). El objetivo de
+                        los zombies es tocar a los humanos para convertirlos en zombies. Los humanos tendrán que evitar
+                        a los zombies.
+                    </p>
+                    <p>El juego cuenta con dos tipos de modo de juego:
+                    </p>
+
+                    <p>
+                    <ul>
+                        <li><b>Modo monedas:</b> los humanos tendrán que recolectar todas las monedas distribuidas por
+                            el escenario para conseguir la victoria.</li>
+                        <li><b>Modo tiempo:</b> los humanos tendrán que sobrevivir el tiempo que dure la partida sin ser
+                            alcanzados.</li>
+                    </ul>
+                    </p>
+
+                    <p>Los jugadores comienzan en diferentes salas de un escenario generado procedimentalmente, de
+                        manera que solo aparece un personaje en cada sala.
+                    </p>
+
+                    <p>El juego proporcionado contaba con las siguientes funcionalidades implementadas:
+                    </p>
+
+                    <p>
+                    <table border="1" cellpadding="8">
+                        <tr>
+                            <td>Modos de juego</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Control del jugador</td>
+                            <td>
+                                <ul>
+                                    <li>Movimiento por el escenario utilizando las teclas W, A, S, D</li>
+                                    <li>Posibilidad de cambiar de equipo presionando H y Z, con el objetivo de facilitar
+                                        en el proceso de depuración y desarrollo</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Interacción con el entorno</td>
+                            <td>
+                                <ul>
+                                    <li>Recolección de monedas</li>
+                                    <li>Conversión a zombi</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Cámara que sigue al jugador en tercera persona</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Interfaz de usuario</td>
+                            <td>
+                                <ul>
+                                    <li>Contador de número de humanos y zombies, tiempo restante (en el modo tiempo) y
+                                        contador de monedas (en el modo monedas)</li>
+                                    <li>Panel de fin de juego</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">OBJETIVOS</h3>
+                    </header>
+                    <p>El objetivo principal del proyecto consistía en terminar de implementar los cambios necesarios
+                        para que el juego siguiera las normas anteriormente descritas y pudiera convertirse en
+                        multijugador.
+                    </p>
+
+                    <p>Mediante la biblioteca Netcode for GameObjects (NGO), se debía gestionar la conexión de los
+                        jugadores, la asignación de equipos, la sincronización de los estados de juego y de sus eventos
+                        (recolección de monedas, conversión de humano a zombi y condiciones de fin de juego).
+                    </p>
+                    <p>También, se debía asegurar que la cámara sigue al jugador correcto, y se debían actualizar las
+                        interfaces de usuario correctamente a todos los jugadores (tiempo restante, número de monedas
+                        recogidas, y número de humanos y zombies).
+                    </p>
+
+                    <p>Otras limitaciones del juego incluían la falta de selección de nombre para identificarse ante los
+                        demás jugadores, la ausencia de sincronización del inicio de partida o la falta de información
+                        al terminar una partida (victoria, derrota o fin de partida por abandono).
+                    </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">IMPLEMENTACIONES OBLIGATORIAS</h3>
+                    </header>
+                    <h4>GESTIÓN DE LA CONEXIÓN Y DESCONEXIÓN DE LOS JUGADORES</h4>
+                    <p>Se creó un menú en el que es posible seleccionar crear una partida (Host) o unirse a una
+                        existente (Cliente). Después, se muestra otra escena en la que se puede cambiar el nombre del
+                        jugador y pulsar el botón para comenzar la partida. Solo el Host podrá seleccionar el tipo de
+                        partida y sus parámetros.
+                    </p>
+                    <span class="image" style="display: block;">
+                        <img src="images/MenuZ.JPG" alt=""
+                            style="width: 800px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+                    </span>
+                    <p> </p>
+
+                    <h4>CONFIGURACIÓN DE PARTIDA</h4>
+                    <p>El Host selecciona el tipo de partida: modo monedas o modo tiempo. En el modo monedas es
+                        necesario introducir la densidad de monedas repartidas por el mapa, y en el modo tiempo es
+                        obligatorio establecer el número de segundos que esta durará.
+                    </p>
+
+                    <h4>INICIO DE PARTIDA SINCRONIZADO</h4>
+                    <p>La partida solo comienza cuando todos los jugadores han pulsado el botón “Ready”. El Host
+                        comienza la partida, haciendo que se inicie de manera sincronizada.
+                    </p>
+
+                    <h4>REPARTO EQUILIBRADO DE JUGADORES EN EQUIPOS</h4>
+                    <p>El juego inicialmente asignaba el equipo de los jugadores de manera aleatoria. Se añadieron los
+                        cambios necesarios para que el número de jugadores en cada equipo no tuviera una diferencia
+                        mayor de un jugador, evitando partidas desequilibradas.
+                    </p>
+                    <span class="image" style="display: block;">
+                        <img src="images/ZombiePOV.JPG" alt=""
+                            style="width: 800px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+                    </span>
+                    <p> </p>
+
+                    <h4>SINCRONIZACIÓN DE EVENTOS DEL JUEGO</h4>
+                    <p>Mediante Netcode, se sincronizaron acciones como la posición de los jugadores, recolección de
+                        monedas, o conversión de humano a zombi para que se reprodujeran los mismos eventos en
+                        diferentes pantallas.
+                    </p>
+
+                    <h4>HUD FUNCIONAL</h4>
+                    <p>Del mismo modo, los contadores y temporizadores se sincronizaron para transmitir la misma
+                        información entre jugadores.
+                    </p>
+
+                    <span class="image" style="display: block;">
+                        <img src="images/HumanPOV.JPG" alt=""
+                            style="width: 800px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+                    </span>
+                    <p> </p>
+
+                    <h4>FINALIZACIÓN DE PARTIDA</h4>
+                    <p>Se implementó una pantalla de fin de partida. Existen cuatro tipos:
+                    </p>
+
+                    
+                    <ul>
+                        <li>
+                            Victoria de humanos
+                        </li>
+                        <li>Victoria de zombies
+                        </li>
+                        <li>Victoria de zombies, pero el jugador ha sido convertido en zombie
+                        </li>
+                        <li>Fin por desconexión de jugadores
+                        </li>
+                    </ul>
+                    
+
+                    <h4>NUEVA PARTIDA SIN CERRAR SERVIDOR</h4>
+                    <p>Después de terminar una partida, se añadió la posibilidad de comenzar otra partida reutilizando
+                        el servidor.
+                    </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">MEJORAS</h3>
+                    </header>
+                    <p>Todos los jugadores tienen acceso a un mapa en la interfaz, que muestra el escenario y la
+                        ubicación de los compañeros. A los humanos les muestra únicamente la ubicación de todos los
+                        humanos y los zombis que se encuentren presentes en la misma sala. A los zombis les muestra todo
+                        el mapa con la ubicación de todos los jugadores zombis y humanos.
+                    </p>
+                    <p>
+            </section>
+
+            <!-- Two -->
+            <section id="two" class="spotlights">
+
+                <section>
+                    <a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="image">
+                        <img src="images/BoubaBanner2.JPG" alt="" data-position="top center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>TRAILER</h3>
+                            </header>
+                            <p>Conoce a los personajes y adéntrate en el universo de Bouba District.</p>
+                            <ul class="actions">
+                                <li><a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="button">VER TRAILER</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <a href="https://syncstudios-games.itch.io/bouba-district" class="image">
+                        <img src="images/Banner.PNG" alt="" data-position="center center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>JUEGO</h3>
+                            </header>
+                            <p>Pon a prueba tus habilidades rítmicas, derrota a los enemigos.</p>
+                            <ul class="actions">
+                                <li><a href="https://syncstudios-games.itch.io/bouba-district" class="button">JUGAR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <a href="https://linktr.ee/syncstudiosgames" class="image">
+                        <img src="images/Logo.png" alt="" data-position="25% 25%" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>SYNC STUDIOS</h3>
+                            </header>
+                            <p>Conoce el trabajo del "estudio": Game Design Document, portfolio y redes.</p>
+                            <ul class="actions">
+                                <li><a href="https://linktr.ee/syncstudiosgames" class="button">MÁS LINKS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Three -->
+            <section id="three">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Massa libero</h2>
+                    </header>
+                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
+                        magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
+                        Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
+                        consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
+                        amet pharetra et feugiat tempus.</p>
+                    <ul class="actions">
+                        <li><a href="generic.html" class="button next">Get Started</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="inner">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field half">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                            <li><input type="reset" value="Clear" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section class="split">
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-envelope"></span>
+                            <h3>Email</h3>
+                            <a href="#">information@untitled.tld</a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-phone"></span>
+                            <h3>Phone</h3>
+                            <span>(000) 000-0000 x12387</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-home"></span>
+                            <h3>Address</h3>
+                            <span>1234 Somewhere Road #5432<br />
+                                Nashville, TN 00000<br />
+                                United States of America</span>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
