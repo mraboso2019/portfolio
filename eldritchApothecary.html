@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Portfolio Marta Raboso</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <!-- Note: The "styleN" class below should match that of the banner element. -->
+        <header id="header" class="alt style2">
+            <a href="index.html" class="logo"><strong>Portfolio</strong> <span>Marta Raboso</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landing.html">Landing</a></li>
+                <li><a href="generic.html">Generic</a></li>
+                <li><a href="elements.html">Elements</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Get Started</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <!-- Note: The "styleN" class below should match that of the header element. -->
+        <section id="banner" class="style2">
+            <div class="inner">
+                <span class="image">
+                    <img src="images/pic07.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h1>Eldritch Apothecary</h1>
+                </header>
+                <div class="content">
+                    <p>Juego musical competitivo<br />
+                        combina mecánicas que mezclan acción y ritmo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h2>INTRODUCCIÓN</h2>
+                    </header>
+
+                    <p>Este proyecto consistió en la implementación de un entorno en Unity en el que distintos
+                        personajes interactúan entre sí de manera autónoma. Para ello fue necesario conocer diferentes
+                        técnicas de Inteligencia Artificial y cómo se aplican en personajes de videojuegos.
+                    </p>
+                </div>
+            </section>
+
+            <!-- One -->
+            <section id="one" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="inner">
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">DESCRIPCIÓN GENERAL</h3>
+                    </header>
+                    <p>La simulación se desarrolla en una tienda de alquimia y hechicería, en una apoteca mágica. Con
+                        ello se busca recrear la dinámica de una jornada laboral marcada por desafíos inesperados.
+                    </p>
+                    <p>A ella acudirán numerosos clientes con diferentes demandas. El personal, tendrá que atender estas
+                        peticiones y satisfacer a los clientes superando imprevistos.
+                    </p>
+                    <p>La simulación cuenta con seis tipos de personajes:
+                    </p>
+                    <ul>
+                        <li>Clientes</li>
+                        <li>Recepcionista</li>
+                        <li>Alquimista</li>
+                        <li>Hechicero</li>
+                        <li>Reponedor</li>
+                        <li>Gato</li>
+                    </ul>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">CONTROLES</h3>
+                    </header>
+                    <p>La simulación es interactiva. Es posible modificar su velocidad de reproducción, desplazarse por
+                        el espacio, y reiniciarla.
+                    </p>
+                    <p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Acción</th>
+                                <th>Control</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Moverse por el escenario</td>
+                                <td>WASD / Flechas</td>
+                            </tr>
+                            <tr>
+                                <td>Rotar cámara</td>
+                                <td>Botón derecho del ratón</td>
+                            </tr>
+                            <tr>
+                                <td>Panear</td>
+                                <td>Botón medio del ratón</td>
+                            </tr>
+                            <tr>
+                                <td>Zoom</td>
+                                <td>Scroll del ratón</td>
+                            </tr>
+                            <tr>
+                                <td>Modificar velocidad de la simulación</td>
+                                <td>Slider en UI</td>
+                            </tr>
+                            <tr>
+                                <td>Reiniciar simulación</td>
+                                <td>Botón en UI</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">PERSONAJES</h3>
+                    </header>
+                    <h4>CLIENTE</h4>
+                    <p>Los clientes vienen y van, pero siempre quieren algo, ya sea comprar o incluso robar algo de la
+                        tienda, una poción hecha por el alquimista, o que el hechicero le haga un conjuro.
+                    </p>
+                    <ul>
+                        <li>Impaciente: espera poco tiempo y es un poco asustadizo.
+                        </li>
+                        <li>Asustadizo: espera poco tiempo y es muy asustadizo.
+                        </li>
+                        <li>Ladrón: solo entra para robar en la tienda y luego sale corriendo por la puerta.
+                        </li>
+                        <li>Normal: espera mucho tiempo y no es casi nada asustadizo.
+                        </li>
+                    </ul>
+
+                    <p>El tiempo que pueda esperar y cómo de asustadizo sea es importante, porque procederá a quejarse
+                        al recepcionista si espera demasiado tiempo a que este le atienda, a que el reponedor reponga lo
+                        que quiere de la tienda, o a que sea su turno; o si el gato le ha asustado demasiadas veces.
+                    </p>
+                    <p>Su comportamiento fue implementado con un sistema de utilidad combinado con una máquina de
+                        estados.
+                    </p>
+
+                    <h4>RECEPCIONISTA</h4>
+                    <p>El recepcionista se encarga de atender a los clientes en la cola para pagar y coger su turno de
+                        poción o de hechizo según el servicio que quieran, de mover las pociones que el alquimista va
+                        haciendo al mostrador donde los clientes las recogen, y de atender a los clientes que se quejen.
+                        Además, su comportamiento cambiará según su personalidad:
+                    </p>
+
+                    <ul>
+                        <li>Perezoso: se mueve lentamente
+                        </li>
+                        <li>Enfadado: se mueve rápidamente y en vez de calmar a los clientes que se quejen discutirá con
+                            ellos
+                        </li>
+                        <li>Normal: se mueve con una velocidad normal
+                        </li>
+                    </ul>
+
+                    <p>El comportamiento del recepcionista se ejecuta con un sistema de utilidad.
+                    </p>
+
+                    <h4>ALQUIMISTA</h4>
+                    <p>El alquimista puede preparar únicamente una poción a la vez, para la que requerirá ingredientes
+                        que se encuentran almacenados en las estanterías de su habitación.
+                    </p>
+
+                    <p>En el momento en el que el gato se suba a su mesa de trabajo, el alquimista intentará espantarlo,
+                        sin embargo, si el alquimista necesita colocar una poción rápidamente en el mostrador, ignorará
+                        al animal. Una vez que el gato abandona la mesa, el alquimista retomará la tarea que estaba
+                        haciendo.
+                    </p>
+
+                    <p>Al inicio del día, se determinará su personalidad que determinarán diferentes aspectos de su
+                        comportamiento:
+                    </p>
+
+                    <ul>
+                        <li>Perezoso, normal o energético: el tiempo que tarda en preparar una poción y su velocidad de
+                            movimiento
+                        </li>
+                        <li>Eficiente, normal o ineficiente: cantidad de ingredientes extra que añadirá a las pociones
+                        </li>
+                        <li>Novato, adepto o maestro: probabilidad de que se le escurra una poción al dejarla en el
+                            mostrador.
+                        </li>
+                    </ul>
+
+                    <p>Si una poción cae al suelo, se formará un charco mágico, que al entrar en contacto con el gato,
+                        provocará el cambio de su color.
+                    </p>
+
+                    <p>El comportamiento del alquimista se ha implementado mediante una Máquina de Estados de Pila.
+                    </p>
+
+                    <h4>HECHICERO</h4>
+                    <p>El hechicero solo puede dedicar su atención a un cliente por vez. Sus rituales no pueden
+                        completarse sin los ingredientes adecuados, que deben ser traídos por el reponedor a su estación
+                        de trabajo. Si el gato decide molestarlo, interrumpe por completo su flujo, forzando al
+                        hechicero a detenerse hasta que se retire.
+                    </p>
+
+                    <p>Su desempeño está marcado por atributos únicos que afectarán la velocidad y éxito de su trabajo:
+                    </p>
+
+                    <ul>
+                        <li>Perezoso, normal o energético: rapidez de movimiento y tiempo empleado en realizar hechizos.
+                        </li>
+                        <li>Eficiente, normal o ineficiente: cantidad de ingredientes que empleará en sus rituales.
+                        </li>
+                        <li>Novato, adepto o maestro: probabilidad de que falle un hechizo y tenga que empezar otro de
+                            nuevo.
+                        </li>
+                    </ul>
+
+                    <p>El comportamiento del hechicero se ejecuta con una Máquina de Estados de Pila. Cuando el gato se
+                        sube a su mesa, interrumpe sus tareas. Regresa al estado previo cuando el gato se marcha.
+                    </p>
+
+                    <h4>REPONEDOR</h4>
+
+                    <p>El reponedor se encarga de reponer las estanterías de toda la apoteca mágica, es decir, las de la
+                        zona de la tienda, la del alquimista y la del hechicero.
+                    </p>
+
+                    <p>Este personaje, igual que el resto, puede tener diferentes personalidades que influirán en su
+                        desempeño, pudiendo ser:
+                    </p>
+
+                    <ul>
+                        <li>Perezoso: se mueve lentamente y tarda más en coger y reponer suministros.
+                        </li>
+                        <li>Energizado: se mueve rápidamente y tarda muy poco en coger suministros y reponerlos.
+                        </li>
+                        <li>Normal: se mueve con una velocidad normal y tarda lo normal en coger y reponer suministros.
+                        </li>
+                    </ul>
+
+                    <p>El comportamiento del reponedor se ha implementado con un sistema de utilidad en el que algunas
+                        de las acciones (tres concretas de una acción de clase genérica) son pequeños árboles de
+                        comportamiento
+                    </p>
+
+                    <h4>GATO</h4>
+                    <p>El gato, solo se dedica a pasearse por la apoteca, molestar al personal y a descansar. Este
+                        molestará al hechicero o al alquimista subiéndose en sus mesas e interrumpiendo su trabajo si
+                        está cerca de alguno de ellos y ha pasado suficiente tiempo desde que molestó a cada uno.
+                        Además, al pasar cerca de un cliente, el gato puede asustarle si se cumplen todas las
+                        condiciones descritas en el apartado para asustarse.
+                    </p>
+
+                    <p>Al andar pierde energía, por lo que cuando no le quede nada de esta, el gato irá a su cama más
+                        cercana para recuperar toda su energía y poder seguir recorriendo la apoteca. Cabe destacar que
+                        el gato cambia de color cuando pasa por encima de una poción que se le ha caído al alquimista.
+                    </p>
+
+                    <p>Su comportamiento cambia ligeramente según su personalidad:
+                    </p>
+                    <ul>
+                        <li>Problemático: mayor velocidad de movimiento y menor distancia en la que detecta al
+                            alquimista y hechicero.
+                        </li>
+                        <li>Normal: velocidad de movimiento moderada y mayor distancia a la que detecta a los
+                            trabajadores.
+                        </li>
+                    </ul>
+
+                    <p>El comportamiento del gato se ha implementado con un árbol de comportamiento
+                    </p>
+
+                    <h4>CONTRIBUCIONES</h4>
+
+                    <p>En este proyecto fui la responsable de implementar el comportamiento del Hechicero. Para ello fue
+                        necesario identificar las percepciones y acciones que afectarán a sus cambios de estado y
+                        comprender el funcionamiento de una FSM de pila. Se programó su movimiento, se enlazaron las
+                        animaciones correspondientes y se añadieron efectos mágicos a su mesa de trabajo cuando está
+                        haciendo un conjuro.
+                    </p>
+
+                    <p>Algunas percepciones incluyen detectar si hay un cliente en espera, si el gato está sobre su mesa
+                        o si hay ingredientes suficientes para realizar el hechizo. Entre sus acciones se encuentra
+                        recoger ingredientes, atender a cliente o reaccionar al gato.
+                    </p>
+
+                    <p>Cabe destacar que si el mago falla su hechizo, el cliente al que está atendiendo tendrá
+                        consecuencias: podrá aumentar o disminuir de tamaño o cambiar de color.
+                    </p>
+
+                </div>
+            </section>
+
+            <!-- Two -->
+            <section id="two" class="spotlights">
+
+                <section>
+                    <a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="image">
+                        <img src="images/BoubaBanner2.JPG" alt="" data-position="top center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>TRAILER</h3>
+                            </header>
+                            <p>Conoce a los personajes y adéntrate en el universo de Bouba District.</p>
+                            <ul class="actions">
+                                <li><a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="button">VER TRAILER</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <a href="https://syncstudios-games.itch.io/bouba-district" class="image">
+                        <img src="images/Banner.PNG" alt="" data-position="center center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>JUEGO</h3>
+                            </header>
+                            <p>Pon a prueba tus habilidades rítmicas, derrota a los enemigos.</p>
+                            <ul class="actions">
+                                <li><a href="https://syncstudios-games.itch.io/bouba-district" class="button">JUGAR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <a href="https://linktr.ee/syncstudiosgames" class="image">
+                        <img src="images/Logo.png" alt="" data-position="25% 25%" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>SYNC STUDIOS</h3>
+                            </header>
+                            <p>Conoce el trabajo del "estudio": Game Design Document, portfolio y redes.</p>
+                            <ul class="actions">
+                                <li><a href="https://linktr.ee/syncstudiosgames" class="button">MÁS LINKS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Three -->
+            <section id="three">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Massa libero</h2>
+                    </header>
+                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
+                        magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
+                        Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
+                        consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
+                        amet pharetra et feugiat tempus.</p>
+                    <ul class="actions">
+                        <li><a href="generic.html" class="button next">Get Started</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="inner">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field half">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                            <li><input type="reset" value="Clear" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section class="split">
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-envelope"></span>
+                            <h3>Email</h3>
+                            <a href="#">information@untitled.tld</a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-phone"></span>
+                            <h3>Phone</h3>
+                            <span>(000) 000-0000 x12387</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-home"></span>
+                            <h3>Address</h3>
+                            <span>1234 Somewhere Road #5432<br />
+                                Nashville, TN 00000<br />
+                                United States of America</span>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
