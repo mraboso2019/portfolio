@@ -74,6 +74,10 @@
                         personajes interactúan entre sí de manera autónoma. Para ello fue necesario conocer diferentes
                         técnicas de Inteligencia Artificial y cómo se aplican en personajes de videojuegos.
                     </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/EA.JPG" style="width:800pox; max-width:100%; height:auto;" />
+                    </div>
                 </div>
             </section>
 
@@ -84,21 +88,14 @@
                         <h3 style="font-size: 1.1em;">DESCRIPCIÓN GENERAL</h3>
                     </header>
                     <p>La simulación se desarrolla en una tienda de alquimia y hechicería, en una apoteca mágica. Con
-                        ello se busca recrear la dinámica de una jornada laboral marcada por desafíos inesperados.
-                    </p>
-                    <p>A ella acudirán numerosos clientes con diferentes demandas. El personal, tendrá que atender estas
+                        ello se busca recrear la dinámica de una jornada laboral marcada por desafíos inesperados. A
+                        ella acudirán numerosos clientes con diferentes demandas. El personal, tendrá que atender estas
                         peticiones y satisfacer a los clientes superando imprevistos.
                     </p>
-                    <p>La simulación cuenta con seis tipos de personajes:
+
+                    <p>La simulación cuenta con seis tipos de personajes: clientes, recepcionista, alquimista,
+                        hechicero, reponedor y gato.
                     </p>
-                    <ul>
-                        <li>Clientes</li>
-                        <li>Recepcionista</li>
-                        <li>Alquimista</li>
-                        <li>Hechicero</li>
-                        <li>Reponedor</li>
-                        <li>Gato</li>
-                    </ul>
 
                     <header class="major">
                         <h3 style="font-size: 1.1em;">CONTROLES</h3>
@@ -108,38 +105,30 @@
                     </p>
                     <p>
                     <table>
-                        <thead>
-                            <tr>
-                                <th>Acción</th>
-                                <th>Control</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Moverse por el escenario</td>
-                                <td>WASD / Flechas</td>
-                            </tr>
-                            <tr>
-                                <td>Rotar cámara</td>
-                                <td>Botón derecho del ratón</td>
-                            </tr>
-                            <tr>
-                                <td>Panear</td>
-                                <td>Botón medio del ratón</td>
-                            </tr>
-                            <tr>
-                                <td>Zoom</td>
-                                <td>Scroll del ratón</td>
-                            </tr>
-                            <tr>
-                                <td>Modificar velocidad de la simulación</td>
-                                <td>Slider en UI</td>
-                            </tr>
-                            <tr>
-                                <td>Reiniciar simulación</td>
-                                <td>Botón en UI</td>
-                            </tr>
-                        </tbody>
+                        <tr>
+                            <td>Moverse por el escenario</td>
+                            <td>WASD / Flechas</td>
+                        </tr>
+                        <tr>
+                            <td>Rotar cámara</td>
+                            <td>Botón derecho del ratón</td>
+                        </tr>
+                        <tr>
+                            <td>Panear</td>
+                            <td>Botón medio del ratón</td>
+                        </tr>
+                        <tr>
+                            <td>Zoom</td>
+                            <td>Scroll del ratón</td>
+                        </tr>
+                        <tr>
+                            <td>Modificar velocidad de la simulación</td>
+                            <td>Slider en UI</td>
+                        </tr>
+                        <tr>
+                            <td>Reiniciar simulación</td>
+                            <td>Botón en UI</td>
+                        </tr>
                     </table>
 
                     <header class="major">
@@ -149,16 +138,25 @@
                     <p>Los clientes vienen y van, pero siempre quieren algo, ya sea comprar o incluso robar algo de la
                         tienda, una poción hecha por el alquimista, o que el hechicero le haga un conjuro.
                     </p>
-                    <ul>
-                        <li>Impaciente: espera poco tiempo y es un poco asustadizo.
-                        </li>
-                        <li>Asustadizo: espera poco tiempo y es muy asustadizo.
-                        </li>
-                        <li>Ladrón: solo entra para robar en la tienda y luego sale corriendo por la puerta.
-                        </li>
-                        <li>Normal: espera mucho tiempo y no es casi nada asustadizo.
-                        </li>
-                    </ul>
+
+                    <table>
+                        <tr>
+                            <td>Impaciente</td>
+                            <td>Espera poco tiempo y es un poco asustadizo.</td>
+                        </tr>
+                        <tr>
+                            <td>Asustadizo</td>
+                            <td>Espera poco tiempo y es muy asustadizo.</td>
+                        </tr>
+                        <tr>
+                            <td>Ladrón</td>
+                            <td>Solo entra para robar en la tienda y luego sale corriendo por la puerta.</td>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td>Espera mucho tiempo y no es casi nada asustadizo.</td>
+                        </tr>
+                    </table>
 
                     <p>El tiempo que pueda esperar y cómo de asustadizo sea es importante, porque procederá a quejarse
                         al recepcionista si espera demasiado tiempo a que este le atienda, a que el reponedor reponga lo
@@ -168,6 +166,11 @@
                         estados.
                     </p>
 
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Clientes.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
                     <h4>RECEPCIONISTA</h4>
                     <p>El recepcionista se encarga de atender a los clientes en la cola para pagar y coger su turno de
                         poción o de hechizo según el servicio que quieran, de mover las pociones que el alquimista va
@@ -175,18 +178,31 @@
                         Además, su comportamiento cambiará según su personalidad:
                     </p>
 
-                    <ul>
-                        <li>Perezoso: se mueve lentamente
-                        </li>
-                        <li>Enfadado: se mueve rápidamente y en vez de calmar a los clientes que se quejen discutirá con
-                            ellos
-                        </li>
-                        <li>Normal: se mueve con una velocidad normal
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Perezoso</td>
+                                <td>Se mueve lentamente.</td>
+                            </tr>
+                            <tr>
+                                <td>Enfadado</td>
+                                <td>Se mueve rápidamente y, en vez de calmar a los clientes que se quejen, discutirá con
+                                    ellos.</td>
+                            </tr>
+                            <tr>
+                                <td>Normal</td>
+                                <td>Se mueve con una velocidad normal.</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <p>El comportamiento del recepcionista se ejecuta con un sistema de utilidad.
                     </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Recepcionista.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
 
                     <h4>ALQUIMISTA</h4>
                     <p>El alquimista puede preparar únicamente una poción a la vez, para la que requerirá ingredientes
@@ -203,16 +219,22 @@
                         comportamiento:
                     </p>
 
-                    <ul>
-                        <li>Perezoso, normal o energético: el tiempo que tarda en preparar una poción y su velocidad de
-                            movimiento
-                        </li>
-                        <li>Eficiente, normal o ineficiente: cantidad de ingredientes extra que añadirá a las pociones
-                        </li>
-                        <li>Novato, adepto o maestro: probabilidad de que se le escurra una poción al dejarla en el
-                            mostrador.
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Perezoso, normal o energético</td>
+                                <td>El tiempo que tarda en preparar una poción y su velocidad de movimiento.</td>
+                            </tr>
+                            <tr>
+                                <td>Eficiente, normal o ineficiente</td>
+                                <td>Cantidad de ingredientes extra que añadirá a las pociones.</td>
+                            </tr>
+                            <tr>
+                                <td>Novato, adepto o maestro</td>
+                                <td>Probabilidad de que se le escurra una poción al dejarla en el mostrador.</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <p>Si una poción cae al suelo, se formará un charco mágico, que al entrar en contacto con el gato,
                         provocará el cambio de su color.
@@ -220,6 +242,11 @@
 
                     <p>El comportamiento del alquimista se ha implementado mediante una Máquina de Estados de Pila.
                     </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Alquimista.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
 
                     <h4>HECHICERO</h4>
                     <p>El hechicero solo puede dedicar su atención a un cliente por vez. Sus rituales no pueden
@@ -231,19 +258,31 @@
                     <p>Su desempeño está marcado por atributos únicos que afectarán la velocidad y éxito de su trabajo:
                     </p>
 
-                    <ul>
-                        <li>Perezoso, normal o energético: rapidez de movimiento y tiempo empleado en realizar hechizos.
-                        </li>
-                        <li>Eficiente, normal o ineficiente: cantidad de ingredientes que empleará en sus rituales.
-                        </li>
-                        <li>Novato, adepto o maestro: probabilidad de que falle un hechizo y tenga que empezar otro de
-                            nuevo.
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Perezoso, normal o energético</td>
+                                <td>Rapidez de movimiento y tiempo empleado en realizar hechizos.</td>
+                            </tr>
+                            <tr>
+                                <td>Eficiente, normal o ineficiente</td>
+                                <td>Cantidad de ingredientes que empleará en sus rituales.</td>
+                            </tr>
+                            <tr>
+                                <td>Novato, adepto o maestro</td>
+                                <td>Probabilidad de que falle un hechizo y tenga que empezar otro de nuevo.</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <p>El comportamiento del hechicero se ejecuta con una Máquina de Estados de Pila. Cuando el gato se
                         sube a su mesa, interrumpe sus tareas. Regresa al estado previo cuando el gato se marcha.
                     </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Hechicero.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
 
                     <h4>REPONEDOR</h4>
 
@@ -255,19 +294,33 @@
                         desempeño, pudiendo ser:
                     </p>
 
-                    <ul>
-                        <li>Perezoso: se mueve lentamente y tarda más en coger y reponer suministros.
-                        </li>
-                        <li>Energizado: se mueve rápidamente y tarda muy poco en coger suministros y reponerlos.
-                        </li>
-                        <li>Normal: se mueve con una velocidad normal y tarda lo normal en coger y reponer suministros.
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Perezoso</td>
+                                <td>Se mueve lentamente y tarda más en coger y reponer suministros.</td>
+                            </tr>
+                            <tr>
+                                <td>Energizado</td>
+                                <td>Se mueve rápidamente y tarda muy poco en coger suministros y reponerlos.</td>
+                            </tr>
+                            <tr>
+                                <td>Normal</td>
+                                <td>Se mueve con una velocidad normal y tarda lo normal en coger y reponer suministros.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <p>El comportamiento del reponedor se ha implementado con un sistema de utilidad en el que algunas
                         de las acciones (tres concretas de una acción de clase genérica) son pequeños árboles de
                         comportamiento
                     </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Reponedor.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
 
                     <h4>GATO</h4>
                     <p>El gato, solo se dedica a pasearse por la apoteca, molestar al personal y a descansar. Este
@@ -284,17 +337,28 @@
 
                     <p>Su comportamiento cambia ligeramente según su personalidad:
                     </p>
-                    <ul>
-                        <li>Problemático: mayor velocidad de movimiento y menor distancia en la que detecta al
-                            alquimista y hechicero.
-                        </li>
-                        <li>Normal: velocidad de movimiento moderada y mayor distancia a la que detecta a los
-                            trabajadores.
-                        </li>
-                    </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Problemático</td>
+                                <td>Mayor velocidad de movimiento y menor distancia en la que detecta al alquimista y
+                                    hechicero.</td>
+                            </tr>
+                            <tr>
+                                <td>Normal</td>
+                                <td>Velocidad de movimiento moderada y mayor distancia a la que detecta a los
+                                    trabajadores.</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <p>El comportamiento del gato se ha implementado con un árbol de comportamiento
                     </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Gato.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
 
                     <h4>CONTRIBUCIONES</h4>
 
@@ -321,53 +385,18 @@
             <section id="two" class="spotlights">
 
                 <section>
-                    <a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="image">
-                        <img src="images/BoubaBanner2.JPG" alt="" data-position="top center" />
+                    <a href="https://www.youtube.com/watch?v=YWWqTOe_VwA" class="image">
+                        <img src="images/EA.JPG" alt="" data-position="top center" />
                     </a>
                     <div class="content">
                         <div class="inner">
                             <header class="major">
-                                <h3>TRAILER</h3>
+                                <h3>DEMO</h3>
                             </header>
-                            <p>Conoce a los personajes y adéntrate en el universo de Bouba District.</p>
+                            <p>Conoce el funcionamiento de esta mágica tienda.</p>
                             <ul class="actions">
-                                <li><a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="button">VER TRAILER</a>
+                                <li><a href="https://www.youtube.com/watch?v=YWWqTOe_VwA" class="button">VER VÍDEO</a>
                                 </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <a href="https://syncstudios-games.itch.io/bouba-district" class="image">
-                        <img src="images/Banner.PNG" alt="" data-position="center center" />
-                    </a>
-                    <div class="content">
-                        <div class="inner">
-                            <header class="major">
-                                <h3>JUEGO</h3>
-                            </header>
-                            <p>Pon a prueba tus habilidades rítmicas, derrota a los enemigos.</p>
-                            <ul class="actions">
-                                <li><a href="https://syncstudios-games.itch.io/bouba-district" class="button">JUGAR</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <a href="https://linktr.ee/syncstudiosgames" class="image">
-                        <img src="images/Logo.png" alt="" data-position="25% 25%" />
-                    </a>
-                    <div class="content">
-                        <div class="inner">
-                            <header class="major">
-                                <h3>SYNC STUDIOS</h3>
-                            </header>
-                            <p>Conoce el trabajo del "estudio": Game Design Document, portfolio y redes.</p>
-                            <ul class="actions">
-                                <li><a href="https://linktr.ee/syncstudiosgames" class="button">MÁS LINKS</a></li>
                             </ul>
                         </div>
                     </div>
