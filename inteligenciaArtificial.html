@@ -69,17 +69,15 @@
                     <header class="major">
                         <h2>INTRODUCCIÓN</h2>
                     </header>
-                    <p>Bouba District es un juego competitivo musical multiplataforma que combina mecánicas que mezclan
-                        acción y ritmo. El jugador deberá enfrentarse a hordas de criaturas adorables pero peligrosas,
-                        que se acercan en masa para atacarlo. </p>
-                    <p>La clave para defenderse será seguir el ritmo de la música e ingresar secuencias de teclas
-                        correctas dentro del tiempo indicado. El estilo principal del juego es una combinación de tower
-                        defense y juegos de ritmo.
+                    <p>Para esta proyecto se implementó el aprendizaje de un agente, que huye de otro personaje
+                        utilizando técnicas de Q-Learning en C#. Se proporcionó un escenario en Unity compuesto por un
+                        tablero de 20 x 20 casillas. En el escenario se encuentran paredes que el personaje tendrá que
+                        esquivar y también evitar que se salga de los límites del mundo.
                     </p>
-                    <span class="image" style="display: block;">
-                        <img src="images/BoubaBanner.JPG" alt=""
-                            style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-                    </span>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/IA.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
                 </div>
             </section>
 
@@ -87,206 +85,193 @@
             <section id="one" style="background-color: rgba(0, 0, 0, 0.2);">
                 <div class="inner">
                     <header class="major">
-                        <h3 style="font-size: 1.1em;">MECÁNICAS</h3>
+                        <h3 style="font-size: 1.1em;">ALGORITMO Q-LEARNING</h3>
                     </header>
-                    <p>Las mecánicas principales de Bouba District se centran en la combinación de acción y ritmo.</p>
-                    <p>
-                    <ul>
-                        <li><b>Ritmo y secuencia de teclas:</b> el jugador deberá pulsar las teclas correctas o tocar
-                            los
-                            botones en pantalla en sintonía con la música. Las secuencias variarán en dificultad según
-                            el nivel.
-                        </li>
-                        <li><b>Defensa:</b> el pulsar las teclas correctas provocará que los enemigos se unan al jugador
-                            y le
-                            darán más vida. El jugador tendrá que aguantar el mayor tiempo posible, consiguiendo la
-                            mayor puntuación o hasta que termine la canción, si se trata de un nivel de duración
-                            determinada (en el caso de canciones conocidas).
-                        </li>
-                        <li><b>Puntuación:</b> la puntuación incrementa cuando se matan Boubas. Cuantas más teclas
-                            correctas
-                            consecutivas se consigan pulsar, más puntos sumarás. También se tendrá en cuenta la vida
-                            final del jugador o el tiempo total que ha sobrevivido (dependiendo del tipo de nivel). Esta
-                            puntuación se llevará a un ranking global para fomentar el aspecto competitivo y la
-                            rejugabilidad.
-                        </li>
-                    </ul>
+                    <p>El algoritmo Q-Learning es un tipo de aprendizaje por refuerzo mediante el cual nuestro agente
+                        deberá aprender de diferentes simulaciones. En ellas recibirá recompensas dependiendo de lo
+                        correctas que sean las acciones que realice para poder escapar de su cazador.
                     </p>
 
-                    <header class="major">
-                        <h3 style="font-size: 1.1em;">CONTROLES</h3>
-                    </header>
-                    <p>Los controles de Bouba District están diseñados para ser accesibles, simples y precisos.
-                    </p>
-                    <p>
-                    <ul>
-                        <li><b>En dispositivos móviles y tablets:</b> el jugador cuenta con cuatro botones, dos a ambos
-                            lados
-                            de la pantalla con los que ejecutar las secuencias de notas.
-                        </li>
-                        <li><b>En PC:</b> se controlará por teclado, o con ratón, si se desea experimentar un
-                            mayor reto. Las
-                            teclas asignadas serán W, A, S y D.
-                        </li>
-                    </ul>
+                    <p>Para ello, utilizamos una tabla Q que muestra los diferentes estados posibles en los que se puede
+                        encontrar nuestro agente, y el valor Q (lo correctas que son) de las acciones posibles.
                     </p>
 
-                    <header class="major">
-                        <h3 style="font-size: 1.1em;">APARTADO VISUAL</h3>
-                    </header>
-                    <p>Se desarrolla en 3D, con vista picada, pero también se utilizan elementos en 2D para algunos
-                        aspectos visuales, como la interfaz de usuario y los marcadores rítmicos que indican las
-                        secuencias de teclas.
-                    </p>
-                    <p>Los entornos y personajes están modelados en 3D, con un diseño artístico caricaturesco y
-                        colorido, inspirado en juegos casuales que transmiten un tono alegre, divertido y desenfadado.
-                        Los enemigos son criaturas pequeñas y amables.
-                    </p>
-                    <p>
-                    <ul>
-                        <li><b>Entorno:</b> Los escenarios son simples pero detallados, con una paleta de colores
-                            vibrante. El
-                            escenario principal es una arena ambientada en un entorno urbano donde las criaturas se
-                            acercan desde la parte superior de la pantalla. Cuenta con edificios y props como basura,
-                            farolas, árboles, etc. para rellenar el espacio y aportar ambientación a la partida. El
-                            secundario es uno oscuro con estética moderna y futurista e iluminado con neones y texturas
-                            emisivas. El tercero es también una ciudad nocturna pero con tonos más cálidos e iluminada
-                            de la misma manera que el segundo.
-                        </li>
-                        <p> </p>
-                        <span class="image" style="display: block;">
-                            <img src="images/Gameplay.PNG" alt=""
-                                style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-                        </span>
-                        <p> </p>
-                        <li><b>Personajes:</b> Los personajes siguen en la línea cartoon, con formas redondas y
-                            extremidades
-                            largas. Los enemigos son adorables criaturas, con formas inspiradas en slimes o criaturas
-                            fantásticas. Son coloridos, y aunque sean "enemigos", su aspecto visual es entrañable.</li>
-
-                        <p> </p>
-                        <span class="image" style="display: block;">
-                            <img src="images/Personajes.JPG" alt=""
-                                style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-                        </span>
-                        <p> </p>
-
-                        <p> </p>
-                        <span class="image" style="display: block;">
-                            <img src="images/Boubas.JPG" alt=""
-                                style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-                        </span>
-                        <p> </p>
-
-                        <li><b>Efectos visuales:</b> Los Boubas cuentan con efectos visuales dependiendo del tipo que
-                            sean. También, al matar a las criaturas, se observan efectos visuales llamativos que dan un
-                            toque al videojuego y sirven como retroalimentación al jugador.
-                        </li>
-                    </ul>
-                    </p>
-
-                    <header class="major">
-                        <h3 style="font-size: 1.1em;">MÚSICA</h3>
-                    </header>
-                    <p>La música es un elemento fundamental que impulsa la jugabilidad. Se caracteriza por:
-                    </p>
-                    <p>
-                    <ul>
-                        <li>
-                            <b>Géneros musicales:</b> la banda sonora cuenta con una mezcla de estilos. Cada nivel tiene
-                            su propia pista temática que refleja la atmósfera del escenario.
-                        </li>
-                        <li><b>Motivos:</b> Kiki y los Boubas realizan motivos musicales que se repiten a lo largo del
-                            juego para crear continuidad y familiaridad entre escenarios.
-                        </li>
-                    </ul>
-                    </p>
-
-                    <header class="major">
-                        <h3 style="font-size: 1.1em;">CONTRIBUCIONES</h3>
-                    </header>
-                    <p>En este proyecto fui la encargada de diseñar y modelar los tres escenarios de los niveles del
-                        juego. Estos fueron creados inicialmente con la herramienta SketchUp para después ser añadidos a
-                        Unity. Una vez en el programa, me encargué de ajustar la iluminación, renderizando las texturas
-                        emisoras para optimizar el rendimiento del juego.
-                    </p>
-                    <span class="image" style="display: block;">
-                        <img src="images/EscenarioTop.PNG" alt=""
-                            style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-                    </span>
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/FormulaQ.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
                     <p> </p>
-                    <span class="image" style="display: block;">
-                        <img src="images/NivelCyberpunk.PNG" alt=""
-                            style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-                    </span>
-                    <p> </p>
-                    <span class="image" style="display: block;">
-                        <img src="images/NivelJazz.PNG" alt=""
-                            style="width: 1000px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-                    </span>
-                    <p> </p>
-                    <p>
-                        Por otro lado, fui la responsable de ir actualizando el Game Design Document para ir reflejando
-                        el avance del equipo, además de subir contenido a las redes sociales del estudio.
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">VALORES DE ENTRENAMIENTO</h3>
+                    </header>
+                    <p>A la hora de entrenar al agente, se han asignado los siguientes valores a las variables que
+                        calculan los valores Q, y los diferentes números de episodios e iteraciones:
                     </p>
+
+                    <table border="1" cellpadding="8" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>Alpha</td>
+                                <td>0.2</td>
+                            </tr>
+                            <tr>
+                                <td>Epsilon</td>
+                                <td>0.85</td>
+                            </tr>
+                            <tr>
+                                <td>Gamma</td>
+                                <td>0.9</td>
+                            </tr>
+                            <tr>
+                                <td>Episodes</td>
+                                <td>2000</td>
+                            </tr>
+                            <tr>
+                                <td>Max Steps</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>Episodes Between Saves</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Con este número de episodios, aseguramos que nuestro agente itere lo suficiente y tenga muchas
+                        oportunidades de aprender nuevas situaciones recreadas. Con el valor de Épsilon controlamos el
+                        balance entre la exploración de nuevas acciones y la explotación del conocimiento actual.
+                    </p>
+
+                    <p>Alpha es la tasa de aprendizaje. Un mayor valor dará más peso a la nueva información. Gamma es el
+                        factor de descuento. Los valores altos harán que el personaje favorezca su explotación a largo
+                        plazo y valore más las recompensas futuras.
+                    </p>
+
+                    <p>También limitamos el número máximo de pasos que puede dar el agente hasta terminar un episodio
+                        con maxSteps y cada cierto número de episodios guardaremos la tabla.
+                    </p>
+
+                    <header class="major">
+                        <h3 style="font-size: 1.1em;">ESCENA DE ENTRENAMIENTO</h3>
+                    </header>
+                    <p>En la escena es donde se realizará el entrenamiento. Para ello, haremos que el personaje, tome
+                        tanto acciones aleatorias como las ya aprendidas, y vaya aprendiendo cuáles son las mejores para
+                        escapar del otro personaje.
+                    </p>
+
+                    <h4>ESTADOS</h4>
+                    <p>Antes de comenzar el aprendizaje, tendremos que definir qué estados compondrán nuestras
+                        simulaciones. Para los estados, elegimos comprobar qué celdas vecinas son suelo y la posición
+                        relativa del otro personaje.
+                    </p>
+
+                    <table border="1" cellpadding="8" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Norte</th>
+                                <th>Este</th>
+                                <th>Sur</th>
+                                <th>Oeste</th>
+                                <th>Other.x</th>
+                                <th>Other.y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>(0, 1)</td>
+                                <td>(0, 1)</td>
+                                <td>(0, 1)</td>
+                                <td>(0, 1)</td>
+                                <td>(0, 1, 2)</td>
+                                <td>(0, 1, 2)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Los valores de las celdas vecinas serán 0 o 1, dependiendo de si son transitables o no. Los
+                        valores de la posición relativa del Other serán 0 si es menor que la del agente, 1 si es mayor y
+                        2 si es igual que la del personaje. De esta manera, podremos evaluar estados independientemente
+                        de la posición en la que se encuentre en el tablero.
+                    </p>
+
+                    <p>Con esta propuesta tendríamos 2 * 2 * 2 * 2 * 3 * 3 = 144 estados posibles. Sin embargo, a
+                        continuación, veremos que algunos no son posibles o no se dan en nuestro juego.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/S1.JPG" style="width:600px; max-width:100%; height:auto;" />
+                        <img src="images/S2.JPG" style="width:600px; max-width:100%; height:auto;" />
+                        <img src="images/S3.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <h5>ORDENACIÓN DE ESTADOS</h5>
+                    <p>El siguiente paso consistió en darle valor a esos estados para ordenarlos e identificarlos en la
+                        tabla Q.
+                    </p>
+
+                    <p>Para convertir estos estados a un valor numérico, tendremos que ir sumando los números que tenga
+                        ese estado en su definición (x tendrá 0, 1 o 2), como si fuera un sistema numérico propio.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/S1O.JPG" style="width:600px; max-width:100%; height:auto;" />
+                        <img src="images/S2O.JPG" style="width:600px; max-width:100%; height:auto;" />
+                        <img src="images/S3O.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <p>Así podremos aprovechar cuando un estado se repite en diferentes partes del tablero. También
+                        podremos cambiar las paredes en la escena de Test, ya que los estados no dependen de la posición
+                        absoluta de los personajes.
+                    </p>
+
+                    <h4>TABLA Q</h4>
+                    <p>Para identificar el estado en el que se encuentra el agente, se comprueba si las celdas vecinas
+                        son transitables y la posición relativa del agente y hace los cálculos anteriormente explicados.
+                    </p>
+
+                    <p>Para el entrenamiento, necesitaremos almacenar los diferentes estados y sus posibles acciones en
+                        la tabla Q. En esta, se categorizan los estados, obteniendo un total de 144 estados. Sin
+                        embargo, solo se completarán aquellos estados cuya posibilidad no sea nula. Así obtendremos el
+                        siguiente documento .csv:
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/Qtable.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
+                    <p> </p>
+
+                    <h4>IMPLEMENTACIÓN</h4>
+                    <p>El agente se mueve de manera aleatoria y se calcula el valor actual del estado. Si este se aleja
+                        de su enemigo, recibirá una recompensa, sin embargo, si el agente es capturado recibirá una
+                        recompensa negativa.
+                    </p>
+
+                    <p>Por último, se calcula un nuevo valor Q para la acción y estado deseado mediante la fórmula de la
+                        regla de aprendizaje, utilizando los valores obtenidos con los anteriores métodos.
+                    </p>
+
+                    <p>Tras finalizar la simulación, nuestro agente ya habrá completado su aprendizaje y así habrá
+                        recopilado su aprendizaje en la tabla Q generada. Ahora utilizará lo aprendido sin ninguna
+                        instrucción más que leer esta tabla.
+                    </p>
+
+                    <h4>ESCENA DE TEST</h4>
+                    <p>En la escena de test se aplicará lo aprendido por el agente en una simulación. Para evitar ser
+                        capturado, el agente, deberá leer correctamente la tabla Q y deducir qué acción evitará que sea
+                        capturado.
+                    </p>
+
+                    <p>Se calculará el estado actual dadas las posiciones del agente y del otro personaje.
+                        Posteriormente, obtiene qué acción deberá realizar, leyendo la tabla Q, y se moverá a la casilla
+                        obtenida.
+                    </p>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px;">
+                        <img src="images/IA2.JPG" style="width:600px; max-width:100%; height:auto;" />
+                    </div>
                 </div>
-            </section>
-
-            <!-- Two -->
-            <section id="two" class="spotlights">
-
-                <section>
-                    <a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="image">
-                        <img src="images/BoubaBanner2.JPG" alt="" data-position="top center" />
-                    </a>
-                    <div class="content">
-                        <div class="inner">
-                            <header class="major">
-                                <h3>TRAILER</h3>
-                            </header>
-                            <p>Conoce a los personajes y adéntrate en el universo de Bouba District.</p>
-                            <ul class="actions">
-                                <li><a href="https://www.youtube.com/watch?v=50NnvCX6VOQ" class="button">VER TRAILER</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <a href="https://syncstudios-games.itch.io/bouba-district" class="image">
-                        <img src="images/Banner.PNG" alt="" data-position="center center" />
-                    </a>
-                    <div class="content">
-                        <div class="inner">
-                            <header class="major">
-                                <h3>JUEGO</h3>
-                            </header>
-                            <p>Pon a prueba tus habilidades rítmicas, derrota a los enemigos.</p>
-                            <ul class="actions">
-                                <li><a href="https://syncstudios-games.itch.io/bouba-district" class="button">JUGAR</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <a href="https://linktr.ee/syncstudiosgames" class="image">
-                        <img src="images/Logo.png" alt="" data-position="25% 25%" />
-                    </a>
-                    <div class="content">
-                        <div class="inner">
-                            <header class="major">
-                                <h3>SYNC STUDIOS</h3>
-                            </header>
-                            <p>Conoce el trabajo del "estudio": Game Design Document, portfolio y redes.</p>
-                            <ul class="actions">
-                                <li><a href="https://linktr.ee/syncstudiosgames" class="button">MÁS LINKS</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
             </section>
 
             <!-- Three -->
